@@ -3,5 +3,6 @@ EXPOSE 80
 MAINTAINER mahesh
 LABEL this is code
 COPY index.html /usr/share/nginx/html/
-CMD ["nginx", "start"]
+CMD ["nginx", "-g", "daemon off;"]
+
 
